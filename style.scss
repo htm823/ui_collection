@@ -1,0 +1,79 @@
+@charset 'UTF-8';
+
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-size: 1.6rem;
+	color: #4a4453;
+	font-family: 'Inter', sans-serif;
+}
+
+.header {
+	&__container {
+		width: 100rem;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.main {
+	&__container {
+		width: 100rem;
+		margin: 0 auto;
+	}
+}
+
+.item {
+	&__title {
+		display: block;
+		font-size: 2.4rem;
+	}
+
+	&__price {
+		display: block;
+
+	}
+
+	&__review {
+		display: flex;
+
+		&-list {
+			display: flex;
+			list-style: none;
+		}
+	}
+
+	&__quantity {
+		&-counter {
+			display: flex;
+		}
+
+	}
+}
+
+.footer {
+	padding: 2rem 0;
+
+	&__container {
+		width: 100rem;
+		margin: 0 auto;
+	}
+
+	&__copyright {
+		display: block;
+		text-align: center;
+		font-size: 1.4rem;
+	}
+}

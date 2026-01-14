@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>UI Collection</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container">
+			<h1 class="header__title">Counter</h1>
+		</div>
+	</header>
+	<main class="main">
+		<div class="main__container">
+			<div class="item">
+				<figure>
+					<img src="img/fruits.png">
+				</figure>
+				<div class="item__description">
+					<span class="item__title">Fruits</span>
+					<span class="item__price">£20</span>
+					<div class="item__review">
+						<ul class="item__review-list">
+							<li><i class="fa-solid fa-star"></i></li>
+							<li><i class="fa-solid fa-star"></i></li>
+							<li><i class="fa-solid fa-star"></i></li>
+							<li><i class="fa-solid fa-star"></i></li>
+							<li><i class="fa-solid fa-star"></i></li>
+						</ul>
+						<a href="#">(20 reviews)</a>
+					</div>
+					<p class="item__details">
+						A thoughtfully selected assortment of fresh, seasonal fruits.
+						Carefully packed to preserve flavour, freshness, and quality.
+						Perfect for gifting or enjoying as a healthy everyday treat.
+					</p>
+					<div class="item__quantity">
+						<span class="item__quantity-title">Quantity</span>
+						<div class="item__quantity-counter">
+							<button id="decrement-btn">
+								<i class="fa-solid fa-minus"></i>
+							</button>
+							<input id="quantity" name="quantity" type="number" value="1" readonly>
+							<button id="increment-btn">
+								<i class="fa-solid fa-plus"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer__container">
+			<small class="footer__copyright">&copy; 2025 UI Collection. All rights reserved.</small>
+		</div>
+	</footer>
+	<script src="counter.js"></script>
+</body>
+
+</html>
