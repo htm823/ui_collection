@@ -35,6 +35,28 @@ body {
 	}
 }
 
+.calculator {
+	&__input {
+		display: block;
+		width: 100%;
+		padding: 1.8rem 0;
+		font-size: 2rem;
+		text-align: right;
+	}
+
+	&__number-keys {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	button {
+		width: calc(100% / 4);
+		padding: 1.6rem 0;
+		font-size: 2rem;
+	}
+}
+
 .item {
 	&__title {
 		display: block;
