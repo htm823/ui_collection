@@ -1,13 +1,12 @@
 'use strict';
 
 const incrementBtn = document.getElementById('increment-btn');
-const decrementBtn = document.getElementById('decrement-btn');
 const quantityInput = document.getElementById('quantity');
-const addCartBtn = document.getElementById('add-cart-btn');
+const decrementBtn = document.getElementById('decrement-btn');
 
 let count = 1;
 
-incrementBtn.addEventListener('click', function (e) {
+incrementBtn.addEventListener('click', (e) => {
 	e.preventDefault();
 
 	if (count >= 10) return;
@@ -17,7 +16,7 @@ incrementBtn.addEventListener('click', function (e) {
 	quantityInput.value = count;
 });
 
-decrementBtn.addEventListener('click', function (e){
+decrementBtn.addEventListener('click', (e) => {
 	e.preventDefault();
 
 	if (count <= 1) return;
@@ -26,3 +25,4 @@ decrementBtn.addEventListener('click', function (e){
 
 	quantityInput.value = count;
 });
+
