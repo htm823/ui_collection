@@ -3,8 +3,11 @@
 const numberInput = document.getElementById('number-input');
 const keys = document.getElementById('keys');
 const resetBtn = document.getElementById('reset');
+const plusBtn = document.getElementById('plus');
+const equalBtn = document.getElementById('equal');
 
 let rawValue = '0';
+let firstValue = '0';
 
 keys.addEventListener('click', (e) => {
 	const key = e.target.closest('.calculator__number-key');
@@ -15,7 +18,7 @@ keys.addEventListener('click', (e) => {
 	if (rawValue === '0') {
 		rawValue = number;
 	} else {
-		if (numberInput.value.length >= 8) return;
+		if (rawValue.length >= 8) return;
 		rawValue += number;
 	}
 
@@ -24,7 +27,28 @@ keys.addEventListener('click', (e) => {
 
 resetBtn.addEventListener('click', (e) => {
 	e.preventDefault();
-	
+
+	resetInput();
+});
+
+plusBtn.addEventListener('click', (e) => {
+	e.preventDefault();
+
+	firstValue = rawValue;
+	resetInput();
+});
+
+function resetInput() {
 	rawValue = '0';
 	numberInput.value = rawValue;
+}
+
+equalBtn.addEventListener('click', (e) => {
+	e.preventDefault();
+
+	const secondValue = rawValue;
+	const sum = Number(firstValue) + Number(secondValue);
+
+	rawValue = sum;
+	numberInput.value = rawValue.toLocaleString();
 });
