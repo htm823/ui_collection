@@ -1,8 +1,8 @@
 'use strict';
 
-const incrementBtn = document.getElementById('increment-btn');
-const quantityInput = document.getElementById('quantity');
-const decrementBtn = document.getElementById('decrement-btn');
+const incrementBtn = document.getElementById('increment');
+const decrementBtn = document.getElementById('decrement');
+const numInput = document.getElementById('amount');
 
 let count = 1;
 
@@ -12,8 +12,7 @@ incrementBtn.addEventListener('click', (e) => {
 	if (count >= 10) return;
 
 	count++;
-
-	quantityInput.value = count;
+	numInput.value = count;
 });
 
 decrementBtn.addEventListener('click', (e) => {
@@ -22,7 +21,5 @@ decrementBtn.addEventListener('click', (e) => {
 	if (count <= 1) return;
 
 	count--;
-
-	quantityInput.value = count;
+	numInput.value = count;
 });
-

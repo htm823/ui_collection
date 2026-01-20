@@ -1,9 +1,19 @@
 *,
 ::before,
 ::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+:root {
+  --brand-color-light: #D1BFE8;
+  --brand-color-primary: #9B83B8;
+  --brand-color-dark: #6D5A8C;
+  --text-color-lightest: #FFFFFF;
+  --text-color-light: #D0CBD7;
+  --text-color-primary: #4A4453;
+  --text-color-dark: #27232C;
 }
 
 html {
@@ -11,17 +21,15 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
-  color: #4a4453;
+  font-size: 1.8rem;
+  color: var(--text-color-primary);
   font-family: "Inter", sans-serif;
+  line-height: 1.6;
 }
 
 .header__container {
   width: 100rem;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .main__container {
@@ -29,45 +37,10 @@ body {
   margin: 0 auto;
 }
 
-.calculator__input {
-  display: block;
-  width: 100%;
-  padding: 1.8rem 0;
-  font-size: 2rem;
-  text-align: right;
-}
-.calculator__number-keys {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.calculator button {
-  width: 25%;
-  padding: 1.6rem 0;
-  font-size: 2rem;
+.counter__input {
+  pointer-events: none;
 }
 
-.item__title {
-  display: block;
-  font-size: 2.4rem;
-}
-.item__price {
-  display: block;
-}
-.item__review {
-  display: flex;
-}
-.item__review-list {
-  display: flex;
-  list-style: none;
-}
-.item__quantity-counter {
-  display: flex;
-}
-
-.footer {
-  padding: 2rem 0;
-}
 .footer__container {
   width: 100rem;
   margin: 0 auto;
@@ -75,5 +48,4 @@ body {
 .footer__copyright {
   display: block;
   text-align: center;
-  font-size: 1.4rem;
 }/*# sourceMappingURL=style.css.map */

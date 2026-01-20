@@ -7,8 +7,9 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="style.css">
-	<title>UI Collection</title>
+	<title>Counter — UI Collection</title>
 </head>
 
 <body>
@@ -19,19 +20,17 @@
 	</header>
 	<main class="main">
 		<div class="main__container">
-			<section id="section-work" class="work">
-				<h2 class="work__title">Work</h2>
-				<ul class="work__cards">
-					<li class="work__card">
-						<a href="counter.html">
-							<figure>
-								<img src="" alt="">
-							</figure>
-							<span class="work__card-title">Counter</span>
-							<p class="work__card-description">Counter with JavaScript</p>
-						</a>
-					</li>
-				</ul>
+			<section id="section-counter" class="counter">
+				<h2>Counter</h2>
+				<div class="counter__inner">
+					<button id="decrement" class="counter__btn">
+						<i class="fa-solid fa-minus"></i>
+					</button>
+					<input id="amount" type="number" value="1" class="counter__input">
+					<button id="increment" class="counter__btn">
+						<i class="fa-solid fa-plus"></i>
+					</button>
+				</div>
 			</section>
 		</div>
 	</main>
@@ -40,6 +39,7 @@
 			<small class="footer__copyright">&copy; 2026 UI Collection. All rights reserved.<br>Created by Hatsumi</small>
 		</div>
 	</footer>
+	<script src="counter.js"></script>
 </body>
 
 </html>
