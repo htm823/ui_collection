@@ -41,6 +41,17 @@ body {
   pointer-events: none;
 }
 
+.accordion__question {
+  cursor: pointer;
+}
+.accordion__answer {
+  display: none;
+  cursor: default;
+}
+.accordion__answer.is-open {
+  display: block;
+}
+
 .footer__container {
   width: 100rem;
   margin: 0 auto;

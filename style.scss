@@ -50,6 +50,21 @@ body {
 	}
 }
 
+.accordion {
+	&__question {
+		cursor: pointer;
+	}
+
+	&__answer {
+		display: none;
+		cursor: default;
+
+		&.is-open {
+			display: block;
+		}
+	}
+}
+
 .footer {
 	&__container {
 		width: 100rem;
